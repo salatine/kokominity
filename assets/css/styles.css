@@ -1,8 +1,18 @@
 :root {
-    --primary-color: #0a1128;
-    --white-color: #ffffff;
+    /* kokomi's color pallete */
+    --primary-color: #e8a39b;
+    --baby-color: #f0c1bc; 
+    --unbleached-color: #f6d4cb;
+    --white-color: #f8f7fd;
+    --lavender-color: #dccee8;
+    --bluebell-color: #968dd0;
+    --spacecadet-color: #2e2e52;
+
+    /* other colors */
     --light-gray-color: #dddddd;
-    --crimson-color: rgb(243, 45, 85);
+    --crimson-color: #ca8f87;
+
+    /* other stuff */
     --gap: 3rem;
 }
 
@@ -17,13 +27,14 @@ a {
 }
 
 html {
-    font-size: 62.5%
+    font-size: 62.5%;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 2.2rem;
-    color: var(--primary-color)
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    font-weight: 500;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -66,7 +77,7 @@ h6 {
 }
 
 .main-content {
-    max-width: 1000px;
+    max-width: 100rem;
     margin: 0 auto;
     padding: var(--gap);
 }
@@ -76,12 +87,13 @@ h6 {
 }
 
 .menu {
-    background: var(--white-color);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
+    border-bottom: 0.15rem solid var(--light-gray-color);
+    z-index: 1;
 }
 
 .menu-content {
@@ -90,7 +102,7 @@ h6 {
     align-items: center;
     padding-top: 0;
     padding-bottom: 0;
-    border-bottom: 1.5px solid var(--light-gray-color);
+    position: relative;
 }
 
 .menu h1 {
@@ -119,10 +131,43 @@ h6 {
     width: 0;
     background: var(--crimson-color);
     height: 0.2rem;
-    transition: all 150ms ease-in-out;
+    transition: all 175ms ease-in-out;
 }
 
 .menu ul li a:hover::after {
-    width: 50%;
-    left: 25%;
+    width: 62.5%;
+    left: 18.75%;
+}
+
+.menu-spacing {
+    height: 6.65rem;
+}
+
+.about-content {
+    position: relative;
+    top: -0.75rem;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.about-text, .about-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text > h2 {
+    margin-bottom: 4rem;
+}
+
+.about-img img {
+    object-fit: cover;
+    width: 80%;
+    height: auto;
+    border: 0.6rem solid var(--unbleached-color);
+    border-radius: 50%;
+    background: var(--unbleached-color);
 }
