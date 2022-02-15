@@ -47,6 +47,7 @@ h1 {
 
 h2 {
     font-size: 5.5rem;
+    margin-bottom: 4rem;
 }
 
 h3 {
@@ -76,10 +77,26 @@ h6 {
     background-color: var(--white-color)
 }
 
+.unbleached-bg {
+    background-image: url('../img/scattered-forcefields-white.svg');
+    background-size: 50%;
+    background-position: bottom center;
+    color: var(--bluebell-color)
+}
+
 .main-content {
     max-width: 100rem;
     margin: 0 auto;
     padding: var(--gap);
+}
+
+.curiosities-content {
+    max-width: 100%;
+    padding: var(--gap);
+}
+
+.curiosities-content h2 {
+    text-align: center;
 }
 
 .section {
@@ -171,7 +188,11 @@ h6 {
     display: block;
 }
 
-.about-content {
+.kokomi-text h2 {
+    text-align: center;
+}
+
+.kokomi-content {
     position: relative;
     top: -0.75rem;
     display: grid;
@@ -180,18 +201,14 @@ h6 {
     height: 100vh;
 }
 
-.about-text, .about-img {
+.kokomi-text, .kokomi-img {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
 }
 
-.about-text > h2 {
-    margin-bottom: 4rem;
-}
-
-.about-img img {
+.kokomi-img img {
     object-fit: cover;
     width: 80%;
     height: auto;
@@ -200,3 +217,45 @@ h6 {
     background: var(--unbleached-color);
 }
 
+.ordered-list-container {
+    height: 100%;
+}
+
+#curiosities li {
+    font-family: 'KoHo', sans-serif;
+    font-size: 2.1rem;
+    margin: 5rem 0;
+    padding: 0 9rem;
+    position: relative;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+#curiosities li::before {
+    content: '';
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    right: 0;
+    top: 10%;
+}
+
+#curiosities li:nth-child(1)::before {
+    background-image: url(../img/li1.png);
+}
+
+#curiosities li:nth-child(2)::before {
+    background-image: url(../img/li2.png);
+}
+
+#curiosities li:nth-child(3)::before {
+    background-image: url(../img/li3.png);
+}
+
+#curiosities li:nth-child(4)::before {
+    background-image: url(../img/li4.png);
+}
+
+#curiosities li:nth-child(5)::before {
+    background-image: url(../img/li5.png);
+}
