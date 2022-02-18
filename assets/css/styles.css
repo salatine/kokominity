@@ -253,8 +253,8 @@ h6 {
     height: 45px;
     width: 45px;
     position: absolute;
-    right: 0;
-    top: 10%;
+    right: -100px;
+    top: 20%; 
 }
 
 #curiosities li:nth-child(1)::before {
@@ -532,6 +532,11 @@ body .full {
     .close-menu:checked~.close-menu-label::after {
         /* content is an unicode multiplication sign, not to be confused with 'x' */
         content: '×';
+    }
+
+    #curiosities li {
+        padding: 0;
+        width: 80%;
     }
 }
 
