@@ -1,2 +1,2 @@
 # kokominity
-a simple website, you can view it on https://kokominity.netlify.app/
+a simple website about kokomi, viewable at https://kokominity.netlify.app/.
