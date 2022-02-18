@@ -253,7 +253,7 @@ h6 {
     height: 45px;
     width: 45px;
     position: absolute;
-    right: -100px;
+    right: 0;
     top: 20%; 
 }
 
@@ -537,6 +537,10 @@ body .full {
     #curiosities li {
         padding: 0;
         width: 80%;
+    }
+
+    #curiosities li:before {
+        right: -100px;
     }
 }
 
