@@ -69,7 +69,7 @@ h6 {
 
 .main-bg {
     background-image: url('../img/scattered-forcefields.svg');
-    background-size: 50%;
+    background-size: 100%;
     background-position: center center;
     color: var(--white-color)
 }
@@ -80,21 +80,21 @@ h6 {
 
 .unbleached-bg {
     background-image: url('../img/scattered-forcefields-white.svg');
-    background-size: 50%;
+    background-size: 100%;
     background-position: bottom center;
     color: var(--bluebell-color)
 }
 
 .bluebell-bg {
     background-image: url('../img/scattered-forcefields-bluebell.svg');
-    background-size: cover;
+    background-size: 100%;
     background-position: center center;
     color: var(--spacecadet-color)
 }
 
 .bluecadet-bg {
     background-image: url('../img/endless-constellation.svg');
-    background-size: auto;
+    background-size: 100%;
     background-position: center center;
     color: var(--white-color)
 }
@@ -214,9 +214,11 @@ h6 {
     grid-template-columns: 1fr 1.3fr;
     gap: var(--gap);
     min-height: 100vh;
+    justify-items: center;
 }
 
 .kokomi-text, .kokomi-img {
+    max-width: 100%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -444,6 +446,14 @@ body .full {
         grid-template-columns: 1fr;
     }
 
+    .contact-img {
+        grid-column: span 2;
+    }
+
+    .contact-text {
+        grid-column: span 2;
+    }
+
     .gallery-imgs {
         width: 100%;
         max-width: 100%;
@@ -522,5 +532,21 @@ body .full {
     .close-menu:checked~.close-menu-label::after {
         /* content is an unicode multiplication sign, not to be confused with 'x' */
         content: '×';
+    }
+}
+
+@media (max-width: 550px) {
+    .kokomi-img {
+        width: 75vw;
+    }
+
+    .kokomi-text h2 {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    h2, .kokomi-text h2 {
+        font-size: 3.5rem;
     }
 }
