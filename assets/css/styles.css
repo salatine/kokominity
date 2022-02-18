@@ -540,7 +540,7 @@ body .full {
     }
 
     #curiosities li:before {
-        right: -100px;
+        right: -20vw;
     }
 }
 
